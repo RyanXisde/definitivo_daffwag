@@ -5,10 +5,10 @@ CREATE TABLE IF NOT EXISTS pedido (
   data DATE NOT NULL,
   valor_total REAL NOT NULL,
   
-  FOREIGN KEY (cliente_id)
+  FOREIGN KEY (cliente)
   REFERENCES cliente(id),
   
-  FOREIGN KEY(funcionario_id)
+  FOREIGN KEY(funcionario)
   REFERENCES 
   funcionario(id)
   );
