@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTs fornecedor(
   produto TEXT NOT NULL,
   preco REAL NOT NULL,
   contato TEXT NOT NULL,
-  email TEXT NOT NULL);
+  email TEXT NOT NULL;
   
   INSERT INTO fornecedor (nome, local, produto, preco, contato, email)
   VALUES
