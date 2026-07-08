@@ -1,15 +1,15 @@
 CREATE TABLE IF NOT EXISTS cliente(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   nome TEXT NOT NULL,
-  produto INTEGER NOT NULL,
   nascimento DATE NOT NULL,
-  cpf TEXT NOT NULL;
+  cpf TEXT NOT NULL,
+  produto_id INTEGER NOT NULL;
   
-  FOREIGN KEY(produto)
+  FOREIGN KEY(produto_id)
   REFERENCES
   produto(id);
   
-  insert into cliente(id, nome, nascimento, cpf, )
+  insert into cliente(id, nome, nascimento, cpf, produto_id)
   VALUES
   ('Alexandro Rocha', 2010-03-04, '543.765.747-43', 2),
   ('Maria Eduarda', 2009-13-06, '034.205.147-13', 1);
