@@ -1,11 +1,11 @@
 CREATE TABLE IF NOT EXISTS cliente(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   nome TEXT NOT NULL,
-  produto TEXT NOT NULL,
+  produto INTEGER NOT NULL,
   nascimento DATE NOT NULL,
   cpf TEXT NOT NULL;
   
-  FOREIGN KEY(produto_id)
+  FOREIGN KEY(produto)
   REFERENCES
   produto(id);
   
