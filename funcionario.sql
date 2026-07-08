@@ -1,15 +1,15 @@
 CREATE TABLE IF NOT EXISTS funcionario(
     id_seq INTEGER PRIMARY KEY AUTOINCREMENT,
-    Nome TEXT NOT NULL,
-    Area TEXT NOT NULL,
-    Telefone TEXT NOT NULL,
-    Cpf TEXT NOT NULL UNIQUE,
-    Data TEXT NOT NULL,
-    Salario REAL NOT NULL
+    nome TEXT NOT NULL,
+    area TEXT NOT NULL,
+    telefone TEXT NOT NULL,
+    cpf TEXT NOT NULL UNIQUE,
+    dataa TEXT NOT NULL,
+    salario REAL NOT NULL
 );
 
 INSERT INTO funcionario
-(Nome, Area, Telefone, Cpf, Data, Salario)
+(nome, area, telefone, cpf, dataa, salario)
 VALUES
 ('Ricardo Pereira', 'Estoquista', '41999998888', '120.780.829-61', '2025-01-15', 1600),
 ('David Rodrigues', 'Operador de Caixa', '4129323263', '816.758.097-04', '2020-05-20', 2000),
