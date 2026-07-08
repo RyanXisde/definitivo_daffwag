@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS item_pedido (
   
   INSERT INTO item_pedido (pedido_id, item_seq, produto_id, quantidade, valor)
   VALUES
-  (1, 1, 1, 1, 2, 174.98),
+  (1, 1, 1, 2, 174.98),
   (2, 1, 3, 2, 74.99);
   
-  SELECT * FROM item_pedid
+  SELECT * FROM item_pedido
