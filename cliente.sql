@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS cliente(
   
   insert into cliente(nome, nascimento, cpf)
   VALUES
-  ('Alexandro Rocha', 2010-03-04, '543.765.747-43'),
-  ('Maria Eduarda', 2009-03-06, '034.205.147-13');
+  ('Alexandro Rocha', '2010-03-04', '543.765.747-43'),
+  ('Maria Eduarda', '2009-03-06', '034.205.147-13');
 
 SELECT * FROM cliente
