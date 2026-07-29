@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS produto(
   descricao TEXT NOT NULL,
   preco REAL NOT NULL, 
   forn_id INTEGER NOT NULL,
-  FOREIGN KEY (forn_id)
+  FOREIGN KEY (id)
   REFERENCES
   fornecedor(id)
   );
