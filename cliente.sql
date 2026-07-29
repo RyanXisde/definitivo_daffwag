@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS cliente(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   nome TEXT NOT NULL,
   nascimento DATE NOT NULL,
-  cpf TEXT NOT NULL;
+  cpf TEXT NOT NULL);
   
   insert into cliente(nome, nascimento, cpf)
   VALUES
