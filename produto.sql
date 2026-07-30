@@ -4,10 +4,11 @@ CREATE TABLE IF NOT EXISTS produto(
   descricao TEXT NOT NULL,
   preco REAL NOT NULL, 
   forn_id INTEGER NOT NULL,
+  
   FOREIGN KEY (id)
   REFERENCES
-  fornecedor(id)
-  );
+  fornecedor(id));
+
   InSERT INTO produto (nome, descricao, preco, forn_id)
   VALUES
   ('Roupa Fem. Anime', 'Roupa de Anime feminina', 49.99, 1),
