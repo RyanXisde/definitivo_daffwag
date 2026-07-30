@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS produto(
   preco REAL NOT NULL, 
   forn_id INTEGER NOT NULL,
   
-  FOREIGN KEY (id)
+  FOREIGN KEY (forn_id)
   REFERENCES
   fornecedor(id));
 
