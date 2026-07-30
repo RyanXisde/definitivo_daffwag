@@ -9,8 +9,7 @@ CREATE TABLE IF NOT EXISTS pedido (
   REFERENCES cliente(id),
   
   FOREIGN KEY(funcionario)
-  REFERENCES 
-  funcionario(id)
+  REFERENCES funcionario(id)
   );
   
   INSERT INTO pedido (cliente, funcionario, data, valor_total)
