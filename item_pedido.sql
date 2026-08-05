@@ -5,8 +5,6 @@ CREATE TABLE IF NOT EXISTS item_pedido (
   quantidade INTEGER NOT NULL,
   valor REAL NOT NULL,
   
-  PRIMARY key (pedido_id, item_seq),
-  
   FOREIGN KEY (pedido_id)
     REFERENCES pedido(id),
   
